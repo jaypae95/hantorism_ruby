@@ -8,8 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
-
   <!-- Bootstrap core CSS -->
   <link href="/posts/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="/">HANTORISM</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -36,16 +34,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <%= link_to "Hantor Blog", posts_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/posts/about.html">About</a>
+            <a class="nav-link" href="/posts/about.html">New</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/posts/post.html">Sample Post</a>
+            <a class="nav-link" href="/posts/post.html">MyPosts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/posts/contact.html">Contact</a>
+            <a class="nav-link" href="/posts/contact.html">Logout</a>
           </li>
         </ul>
       </div>
@@ -59,7 +57,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
+            <h1>HANTOR Blog</h1>
             <span class="subheading">A Blog Theme by Start Bootstrap</span>
           </div>
         </div>
@@ -135,7 +133,7 @@
   <hr>
 
   <!-- Footer -->
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -169,7 +167,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="/posts/vendor/jquery/jquery.min.js"></script>
