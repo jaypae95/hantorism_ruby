@@ -1,18 +1,10 @@
 <style media="screen">
-  .submit_btn {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
-  }
-  .text_input {
-    border: 2px solid #4CAF50;
-    border-radius: 4px;
-    width : 100%;
-  }
   .textarea {
-    height: 500px;
+    min-height: 300px;
   }
-
+  .myinput {
+    margin : 5%;
+  }
 </style>
 
 
@@ -21,15 +13,13 @@
     <div class="col-lg-8 col-md-10 mx-auto">
       <%= form_for @post do |f| %>
       <div class="col-md-12">
-        <%= f.text_field :title, placeholder: "Title", class: "text_input"%>
-        <br><br>
+        <%= f.text_field :title, placeholder: "Title", class: "form-control myinput"%>
       </div>
       <div class="col-md-12">
-        <%= f.text_area :content, placeholder: "Content", class: "text_input textarea"%>
-        <br><br>
+        <%= f.text_area :content, placeholder: "Content", class: "form-control textarea myinput"%>
       </div>
       <div class="col-md-12">
-        <%= f.submit class: "submit_btn"%>
+        <%= f.submit class: "form-control myinput"%>
       </div>
       <% end %>
     </div>
