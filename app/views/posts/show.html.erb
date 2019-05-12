@@ -9,10 +9,12 @@
           <h1><%= @post.title %></h1>
           <h2 class="subheading"><%= @post.content %></h2>
           <span class="meta">Posted by
-            <a href="#">[Username Coming Soon]</a>
+            <a href="#">[<%= @post.user.my_id %>]</a>
             on <%= @post.created_at.strftime("%m-%d, %Y") %><br>
+          <% if @post.user == current_user %>
           <%= link_to "edit", edit_post_path(@post), class: "btn"%>
-          <%= link_to "delete", post_path(@post), data: {method: :delete}, class: "btn"%>
+          <%= link_to "delete", post_path(@post), data: {method: :delete, confirm: 'Are you sure?' }, class: "btn"%>
+          <% end %>
         </span>
         </div>
       </div>
